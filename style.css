@@ -3,9 +3,10 @@ body {
     margin: 0;
 }
 
+/* Header */
 header {
     background-color: #43054e;
-    padding: 5px 25px; 
+    padding: 45px 100px; 
     position: fixed;
     width: 100%;
     top: 0;
@@ -20,27 +21,199 @@ header {
 .left-icons {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
 }
 
 .right-icons {
     display: flex;
     align-items: center;
-    gap: 7px;
+    gap: 20px;
 }
 
 .logo_ceub {
-    height: 10px;
+    height: 40px;
 }
 
 .cardapio {
-    height: 6px;
+    height: 30px;
 }
 
 .notificacao {
-    height: 6px;
+    height: 30px;
 }
 
 .perfil {
-    height: 6px;
+    height: 30px;
+}
+
+.seta_triangulo {
+    display: flex;
+    height: 10px;
+    align-items: center;
+    margin-left: -10px; 
+    margin-top: 6px; 
+}
+
+.seta_triangulo_button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+/* Header */
+
+/* Estilização do Dropdown perfil */
+.seta_triangulo_button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.seta_triangulo {
+    height: 15px;
+}
+
+.dropdown-menu {
+    position: absolute; 
+    top: 85px; 
+    right: 20px; 
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 10px; 
+    display: none; 
+    z-index: 1000; 
+}
+
+.dropdown-menu a {
+    display: block; 
+    padding: 8px 12px; 
+    text-decoration: none; 
+    color: #333; 
+    font-size: 14px; 
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0; 
+    color: #000; 
+}
+/* Estilização do Dropdown perfil */
+
+
+/* Estilização do Dropdown notificação */
+
+.notificacao_button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.dropdown-sino {
+    position: absolute;
+    top: 100px; 
+    right: 130px; 
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0px;
+    display: none; 
+    z-index: 1000;
+    flex-direction: column;
+}
+
+.dropdown-sino span,
+.dropdown-sino button {
+    display: block;
+    width: 100%; 
+    padding: 10px;
+    border-bottom: 1px solid #cac4d0;
+    box-sizing: border-box;
+}
+
+.dropdown-sino span:last-child,
+.dropdown-sino button:last-child {
+    border-bottom: none; /
+}
+
+.dropdown-sino a {
+    padding: 8px 12px; 
+    text-decoration: none; 
+    color: #333; 
+    font-size: 14px; 
+}
+
+.dropdown-sino a:hover {
+    background-color: #f0f0f0; 
+    color: #000; 
+}
+
+.excluir_notificacoes {
+    background: none; 
+    border: none; 
+    color: #ff0000; 
+    font-size: 14px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    padding: 0; 
+    text-align: left; 
+}
+
+.excluir_notificacoes:hover {
+    color: #e60000; 
+}
+/* Estilização do Dropdown notificação */
+
+/* Estilização do h1 estudante */
+.titulo_estudante {
+    margin-top: 180px;
+    padding-left: 30px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif
+}
+/* Estilização do h1 estudante */
+
+
+/* Mapa das salas */
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.sala {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #888;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.disponivel { background-color: #90ee90; }
+.ocupado { background-color: #ff4d4d; }
+.reserva { background-color: #00bfff; }
+.indisponivel { background-color: #ffa500; }
+.legenda {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.legenda div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.legenda span {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 3px;
 }

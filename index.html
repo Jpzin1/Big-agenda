@@ -8,6 +8,8 @@
 </head>
 <body>
 
+    <!-- Header com icone do ceub, perfil, etc -->
+
     <header>
         <div class="left-icons">
             <img class="logo_ceub" src="src/logo-ceub.png" alt="Logo do Ceub">
@@ -15,13 +17,47 @@
         </div>
     
         <div class="right-icons">
-            <img class="notificacao" src="src/sino.png" alt="Ícone de Notificação">
+            <button class="notificacao_button">
+                <img class="notificacao" src="src/sino.png" alt="Ícone de Notificação">
+            </button>
             <img class="perfil" src="src/perfil-de-usuario.png" alt="Imagem do Perfil">
+            <button class="seta_triangulo_button">
+                <img class="seta_triangulo" src="src/triangulo-seta-para-baixo.png" alt="Imagem seta para baixo">
+            </button>
         </div>
     </header>
-    
 
-    
-    
+    <!-- Dropdown para o perfil -->
+     <div class="dropdown-menu" id="dropdown-menu">
+        <a href="#">Perfil</a>
+        <a href="#">Configurações</a>
+     </div>
+
+     <!-- Dropdown para notificação-->
+      <div class="dropdown-sino" id="dropdown-sino">
+        <span>Sem notificações</span>
+        <span>Você está bloqueado por 2 semanas</span>
+        <button class="excluir_notificacoes">Excluir Notificações</button>
+      </div>
+
+      <div class="titulo_estudante">
+        <h1>Olá, Estudante!</h1>
+      </div>
+
+
+      <div>
+        <div class="container" id="mapaSalas"></div>
+        <div class="legenda">
+            <div><span class="disponivel"></span> Disponível</div>
+            <div><span class="ocupado"></span> Ocupado</div>
+            <div><span class="reserva"></span> Sua Reserva</div>
+            <div><span class="indisponivel"></span> Indisponível</div>
+        </div>
+    </div>
+
+      
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script type="module" src="index.js"></script>
 </body>
 </html>
