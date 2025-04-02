@@ -44,6 +44,7 @@
         <h1>Olá, Estudante!</h1>
       </div>
 
+      <!-- Container -->
       <div class="container-wrapper">
         <div class="container" id="mapaSalas"></div>
         <div class="legenda">
@@ -54,7 +55,16 @@
         </div>
     </div>
 
-      
+    <!-- Modal -->
+    <dialog id="modalSala">
+        <div class="modal-content">
+            <h2 id="modalTitulo">Detalhes da Sala</h2>
+            <p><strong>Recursos:</strong> <span id="modalRecursos"></span></p>
+            <p><strong>Capacidade:</strong> <span id="modalCapacidade"></span> pessoas</p>
+            <button id="fecharModal">Fechar</button>
+        </div>
+    </dialog>
+    
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
 <script type="module" src="index.js"></script>
