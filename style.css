@@ -1,0 +1,46 @@
+body {
+    background-color: #eaedf1;
+    margin: 0;
+}
+
+header {
+    background-color: #43054e;
+    padding: 5px 25px; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    box-sizing: border-box; 
+}
+
+
+.left-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.right-icons {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.logo_ceub {
+    height: 10px;
+}
+
+.cardapio {
+    height: 6px;
+}
+
+.notificacao {
+    height: 6px;
+}
+
+.perfil {
+    height: 6px;
+}
